@@ -6,9 +6,9 @@ import java.util.Map;
 public class LanguageEnUs extends Language {
     public String getContent(Event event) {
         Map<String, String> map = new HashMap<>();
-        map.put(new RegisterSuccessEvent(null).getClass().getName(), " register success");
-        map.put(new BookCourseEvent(null).getClass().getName(), " book course");
-        map.put(new CancelCourserEvent(null).getClass().getName(), " cancel course");
+        map.put(RegisterSuccessEvent.class.getName(), " register success");
+        map.put(BookCourseEvent.class.getName(), " book course");
+        map.put(CancelCourserEvent.class.getName(), " cancel course");
 
         if (map.containsKey(event.getClass().getName())) {
             return map.get(event.getClass().getName());
