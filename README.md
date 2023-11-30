@@ -6,8 +6,7 @@ docker run -it --rm -v "$PWD":/var/www mvn-openjdk-17 bash
 
 Run main method
 ```
-mvn exec:java
-
+mvn compile exec:exec
 ```
 
 Run unit test

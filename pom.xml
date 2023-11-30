@@ -22,7 +22,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -80,6 +80,12 @@
           <version>1.6.0</version>
           <configuration>
             <mainClass>com.devmentor.App</mainClass>
+            <executable>java</executable>
+            <arguments>
+              <argument>-classpath</argument>
+              <classpath />
+              <argument>com.devmentor.App</argument>
+            </arguments>
           </configuration>
       </plugin>
       </plugins>
